@@ -1,0 +1,26 @@
+body {
+    background-image: url('shenron.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.formulaire-centre {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right:auto;
+    
+}
+@media screen and (min-width: 1200px) {
+   .formulaire-centre {
+        margin-top: 50px; /* Plus d'espace en haut sur les grands écrans */
+    }
+}
+@media screen and (max-width: 600px) {
+   .formulaire-centre {
+        width: 90%; /* Largeur du formulaire sur les petits écrans */
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        font-size: 14px; /* Taille de police réduite pour les petits écrans */
+    }
+}
